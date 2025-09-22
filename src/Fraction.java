@@ -52,9 +52,12 @@ public class Fraction implements Comparable<Fraction> {
         return numerator == f.numerator && denominator == f.denominator;
     }
 
-    public String toString() {
-        return numerator + "/" + denominator;
-    }
+    // ToString method qui retournera la chaîne `"Je suis une fraction."`
+    public class Fraction {
+        public String toString() {
+            return "Je suis une fraction.";
+        }
+    }    
 
     // Helper: GCD
     private int gcd(int a, int b) {
