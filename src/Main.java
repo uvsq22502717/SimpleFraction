@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
         // constructeur (numérateur + dénominateur)
@@ -64,6 +66,15 @@ public class Main {
         assert f8.compareTo(f10) == 0; // 1/2 == 1/2
 
         System.out.println("Comparaison naturelle testée avec succès !");
+
+        // Number extension
+        Number aNumber = BigDecimal.ONE;
+        Number anotherNumber = new Fraction(1, 2);
+
+        // tester la compatibilité Number
+        assert Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8;
+
+        System.out.println("Test avec Number réussi !");
 
     }
 }
