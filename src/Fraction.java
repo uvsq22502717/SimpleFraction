@@ -46,7 +46,19 @@ public class Fraction {
         return new Fraction(newNumerator, newDenominator);
     }
     
-    
+    // Egqlite
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;           
+        if (obj == null) return false;         
+        if (!(obj instanceof Fraction)) return false; 
+
+        Fraction other = (Fraction) obj;
+        // comparison a*d == b*c
+        return this.numerator * other.denominator == this.denominator * other.numerator;
+    }
+
+
     @Override
     public String toString() {
         return numerator + "/" + denominator;

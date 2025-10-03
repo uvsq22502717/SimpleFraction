@@ -44,6 +44,14 @@ public class Main {
         System.out.println("Addition testée avec succès !");
         System.out.println(f4 + " + " + f5 + " = " + sum);
 
+        Fraction f6 = new Fraction(2, 4);
+        Fraction f7 = new Fraction(1, 2);
+
+        assert f6.equals(f7); // 2/4 == 1/2
+        assert !f6.equals(new Fraction(1, 3)); // 2/4 != 1/3
+
+        System.out.println("Test d'égalité des fractions réussi !");
+
     }
 }
 
