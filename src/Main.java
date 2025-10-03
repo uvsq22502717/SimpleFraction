@@ -19,8 +19,15 @@ public class Main {
         assert Fraction.UN.toString().equals("1/1");
 
         System.out.println("Constantes ZERO et UN testées avec succès !");
+
+        // tester les getters (corrigé → f1)
+        assert f1.getNumerator() == 3;
+        assert f1.getDenominator() == 4;
+
+        System.out.println("Getters testés avec succès !");
     }
 }
+
 
 
 
