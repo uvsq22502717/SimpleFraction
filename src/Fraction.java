@@ -1,3 +1,8 @@
 public class Fraction {
-    // Vide
+
+    @Override
+    public String toString() {
+        return "Je suis une fraction.";
+    }
 }
+

@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Je suis en Java!");
+        Fraction fm = new Fraction();
+        System.out.println(fm); 
     }
 }
 
