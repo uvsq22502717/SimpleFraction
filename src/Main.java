@@ -44,6 +44,7 @@ public class Main {
         System.out.println("Addition testée avec succès !");
         System.out.println(f4 + " + " + f5 + " = " + sum);
 
+        // tester egalite
         Fraction f6 = new Fraction(2, 4);
         Fraction f7 = new Fraction(1, 2);
 
@@ -51,6 +52,18 @@ public class Main {
         assert !f6.equals(new Fraction(1, 3)); // 2/4 != 1/3
 
         System.out.println("Test d'égalité des fractions réussi !");
+
+        // tester comparison
+        Fraction f8 = new Fraction(1, 2);
+        Fraction f9 = new Fraction(3, 4);
+        Fraction f10 = new Fraction(1, 2);
+
+        // comparer f1 et f2
+        assert f8.compareTo(f9) < 0;  // 1/2 < 3/4
+        assert f9.compareTo(f8) > 0;  // 3/4 > 1/2
+        assert f8.compareTo(f10) == 0; // 1/2 == 1/2
+
+        System.out.println("Comparaison naturelle testée avec succès !");
 
     }
 }
