@@ -2,6 +2,10 @@ public class Fraction {
     int numerator;      // numérateur
     int denominator;    // dénominateur
 
+    // constantes
+    public static final Fraction ZERO = new Fraction(0, 1);
+    public static final Fraction UN = new Fraction(1, 1);
+
     // constructeur avec numérateur et dénominateur
     public Fraction(int n, int d) {
         numerator = n;

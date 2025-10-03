@@ -13,6 +13,12 @@ public class Main {
         assert f3.toString().equals("0/1");
 
         System.out.println("Tous les tests de constructeurs sont reussi !");
+
+        // tester les constantes
+        assert Fraction.ZERO.toString().equals("0/1");
+        assert Fraction.UN.toString().equals("1/1");
+
+        System.out.println("Constantes ZERO et UN testées avec succès !");
     }
 }
 
