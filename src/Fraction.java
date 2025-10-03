@@ -37,8 +37,16 @@ public class Fraction {
     public double doubleValue() {
         return (double) numerator / denominator;
     }
-    
 
+    // Addition
+    public Fraction add(Fraction other) {
+        // addition : a/b + c/d = (a*d + b*c) / (b*d)
+        int newNumerator = this.numerator * other.denominator + this.denominator * other.numerator;
+        int newDenominator = this.denominator * other.denominator;
+        return new Fraction(newNumerator, newDenominator);
+    }
+    
+    
     @Override
     public String toString() {
         return numerator + "/" + denominator;

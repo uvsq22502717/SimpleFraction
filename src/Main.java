@@ -29,7 +29,20 @@ public class Main {
         // tester doubleValue
         assert f1.doubleValue() == 0.75;
 
+
         System.out.println("doubleValue() testée avec succès !");
+
+        Fraction f4 = new Fraction(1, 2);
+        Fraction f5 = new Fraction(1, 3);
+
+        Fraction sum = f4.add(f5);
+
+        // 1/2 + 1/3 = 3/6 + 2/6 = 5/6
+        assert sum.getNumerator() == 5;
+        assert sum.getDenominator() == 6;
+
+        System.out.println("Addition testée avec succès !");
+        System.out.println(f4 + " + " + f5 + " = " + sum);
 
     }
 }
