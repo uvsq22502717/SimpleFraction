@@ -33,6 +33,12 @@ public class Fraction {
         return denominator;
     }
 
+    // Double
+    public double doubleValue() {
+        return (double) numerator / denominator;
+    }
+    
+
     @Override
     public String toString() {
         return numerator + "/" + denominator;

@@ -25,6 +25,12 @@ public class Main {
         assert f1.getDenominator() == 4;
 
         System.out.println("Getters testés avec succès !");
+
+        // tester doubleValue
+        assert f1.doubleValue() == 0.75;
+
+        System.out.println("doubleValue() testée avec succès !");
+
     }
 }
 
